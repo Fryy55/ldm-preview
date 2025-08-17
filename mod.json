@@ -1,0 +1,29 @@
+{
+	"geode": "4.7.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "fryy_55.ldm-preview",
+	"name": "LDM Preview",
+	"version": "v1.0.0",
+	"developer": "Fryy_55",
+	"description": "Adds a button to preview LDM in the editor",
+	"tags": [
+		"offline",
+		"editor",
+		"utility"
+	],
+	"links": {
+		"source": "https://github.com/Fryy55/ldm-preview",
+		"community": "https://discord.com/invite/4vqtjfdhTk"
+	},
+	"dependencies": {
+		"geode.node-ids": {
+			"version": ">=v1.21.1",
+			"importance": "required"
+		}
+	}
+}
