@@ -21,7 +21,9 @@ add_library(${PROJECT_NAME} SHARED ${SOURCES})
 set(SRC_DIR "${PROJECT_SOURCE_DIR}/src")
 target_include_directories(${PROJECT_NAME}
     PRIVATE
-        ${SRC_DIR}/
+        ${SRC_DIR}/hooks
+        ${SRC_DIR}/types/singletons
+        ${SRC_DIR}/utils
 )
 
 if (NOT DEFINED ENV{GEODE_SDK})

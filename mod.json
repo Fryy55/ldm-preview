@@ -11,6 +11,18 @@
 	"version": "v1.0.0",
 	"developer": "Fryy_55",
 	"description": "Adds a button to preview LDM in the editor",
+	"settings": {
+		"general-title": {
+			"type": "title",
+			"name": "General Settings"
+		},
+		"general-select-disabled": {
+			"type": "bool",
+			"name": "Select Hidden Objects",
+			"description": "Toggles whether selecting objects <cj>hidden by this mod</c> actually <cg>selects</c> them or <cr>not</c>",
+			"default": false
+		}
+	},
 	"tags": [
 		"offline",
 		"editor",
