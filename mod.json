@@ -20,7 +20,7 @@
 			"type": "bool",
 			"name": "Select Hidden Objects",
 			"description": "Toggles whether selecting objects <cj>hidden by this mod</c> actually <cg>selects</c> them or <cr>not</c>",
-			"default": false
+			"default": true
 		}
 	},
 	"tags": [

@@ -1,5 +1,6 @@
 #include <Geode/modify/LevelEditorLayer.hpp>
 
+#include "LDMManager.hpp"
 #include "utils.hpp"
 
 using namespace geode::prelude;
@@ -11,7 +12,8 @@ class $modify(LevelEditorLayer) {
 		if (!LevelEditorLayer::init(level, p1))
 			return false;
 
-		ldm::utils::updateVisible(this);
+		LDMManager::get()->updateSettings();
+		ldm::utils::updateVisibleAll(this);
 
 		return true;
 	}

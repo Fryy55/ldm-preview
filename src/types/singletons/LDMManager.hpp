@@ -17,7 +17,11 @@ private:
 public:
 	[[nodiscard]] bool const& getLDMOn() const { return m_ldmOn; }
 	void setLDMOn(bool on) { m_ldmOn = on; }
+	[[nodiscard]] bool const& getSelectDisabled() const { return m_selectDisabled; }
+
+	void updateSettings();
 
 private:
 	bool m_ldmOn;
+	bool m_selectDisabled;
 };

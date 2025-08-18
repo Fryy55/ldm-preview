@@ -28,8 +28,9 @@ class $modify(EditorPauseLayer) {
 			[lel](CCMenuItemToggler* toggler) {
 				bool newOn = !toggler->isOn();
 
+				EditorUI::get()->deselectAll();
 				LDMManager::get()->setLDMOn(newOn);
-				ldm::utils::updateVisible(lel);
+				ldm::utils::updateVisibleAll(lel);
 			}
 		);
 		onLabel->setPosition(19.75f, 21.5f);

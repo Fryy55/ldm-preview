@@ -5,10 +5,12 @@
 using namespace geode::prelude;
 
 
-void ldm::utils::updateVisible(LevelEditorLayer* lel) {
+void ldm::utils::updateVisibleAll(LevelEditorLayer* lel) {
 	for (auto obj : CCArrayExt<HGameObject*>(lel->m_objects)) {
 		obj->checkDisabled();
-		obj->setVisible(obj->m_fields->m_ogVisible); // this is always called at least once by game itself before we call it
+		// setVisible is always called at least once by the game
+		// itself before we call it so m_realVisible is always correct
+		obj->updateVisible();
 	}
 
 	return;

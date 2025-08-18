@@ -4,5 +4,5 @@
 
 
 namespace ldm::utils {
-	void updateVisible(LevelEditorLayer* lel);
+	void updateVisibleAll(LevelEditorLayer* lel);
 }
